@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <style>
+        #paintFrame {
+            display: none; /* Initially hide the iframe */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="paintFrame" src="" title="Paint Inspiration Website" width="100%" height="600px" frameborder="0"></iframe>
+    <form id="paintForm" onsubmit="showPaintFrame(); return false;">
+        <input type="text" id="keywordInput" placeholder="Enter the keyword">
+        <input type="submit" value="Search">
+    </form>
+    <footer>Made by PSYCHO OCTOPUS</footer>
+
+    <script>
+        function showPaintFrame() {
+            var keyword = document.getElementById('keywordInput').value.trim().toLowerCase();
+            var paintFrame = document.getElementById('paintFrame');
+            if (keyword === 'lisagetsanf1' || keyword === 's35e12') {
+                paintFrame.src = 'https://im.gonna.callmark.cl/' + encodeURIComponent(keyword);
+                paintFrame.style.display = 'block'; // Show the iframe
+            } else {
+                document.getElementById('keywordInput').value = ''; // Clear the input field
+                document.getElementById('keywordInput').focus(); // Focus the input field
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<script src="filesystem:https://webmaker.app/temporary/script.js">
+</script>
+</body>
+</html>
